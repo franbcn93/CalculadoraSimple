@@ -1,6 +1,10 @@
 body {
-  /* background-image: url("./paper.jpg"); */
-  background-color: aquamarine !important;
+  background: url("./paper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-color: aquamarine; */
 }
 
 h1 {
@@ -10,6 +14,7 @@ h1 {
   color: coral;
   font-size: 60px;
   font-style: italic;
+  padding-top: 190px;
 }
 
 form,

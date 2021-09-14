@@ -1,11 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation, AfterViewInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
+  constructor(private elementRef: ElementRef){
+
+  }
+  ngAfterViewInit(){
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'yourColor';
+ }
+
   title = 'Mini Calculadora';
   numero1:number=0;
   numero2:number=0;
