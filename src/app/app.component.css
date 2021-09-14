@@ -1,0 +1,32 @@
+body {
+  /* background-image: url("./paper.jpg"); */
+  background-color: aquamarine !important;
+}
+
+h1 {
+  font-family: fantasy;
+  text-align: center;
+  padding: 20px;
+  color: coral;
+  font-size: 60px;
+  font-style: italic;
+}
+
+form,
+p {
+  text-align: center;
+  padding: 20px;
+}
+
+input {
+  text-align: center;
+  font-size: 25px;
+  max-width: 111px;
+  margin-left: 20px;
+}
+
+p,
+form {
+  font-family: fantasy;
+  font-size: 28px;
+}
